@@ -1,0 +1,26 @@
+CREATE TABLE casestudy (
+    taskid           int NOT NULL,
+    name               VARCHAR(30),
+    description        VARCHAR(30),
+    status             VARCHAR(30),
+    priority           VARCHAR(30),
+    notes            VARCHAR(30),
+    bookmark          VARCHAR(30),
+    ownerid         VARCHAR(8),
+    creationon         DATE,
+    modifiedon         DATE);
+
+	INSERT INTO casestudy (
+    taskid,
+    name,
+    description,
+    status,
+    priority,
+    notes,
+    bookmark,
+    ownerid,
+    creationon,
+    modifiedon)
+	VALUES(001,'RISHABH','TESTING','ACTIVE','HIGH','DOCUMENTATION','YES',100,'2000-01-01','2002-02-22');
+                   VALUES(002,'RAHUL','DEVELOPER','MODERATE','LOW','MANUAL','NO',200,'2010-01-01','2021-02-22');
+	
