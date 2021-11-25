@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>Task Tracking System</title>
+<link rel="stylesheet" href="C:\Users\Rishabh Yadav\Desktop\casestudy\casestudy.css">
+</head>
+
+<script type="text/javascript" src="C:\Users\Rishabh Yadav\Desktop\casestudy\casestudy.js"></script>
+<body>
+<section>
+<div class="div1">
+<h2>CREATE TASK</h2>
+<form>
+<input type="text" id="Name" placeholder="Employee Name*" class="user" name="" pattern="[A-Za-z0-9 ]{1,15}" required><br>
+<input type="number" id="TaskID" placeholder="Task ID*" class="user" name="" pattern="{1,4}"required><br>
+<input type="text" id="Description" placeholder="Task Description*" class="user" name="" required><br>
+<select>
+<option>--Select Status*--</option>
+<option>Closed</option>
+<option>Inprogress</option>
+<option>Cancelled</option>
+<option>OnHold</option>
+</select><br>
+<select>
+<option>--Choose Priority*--</option>
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select><br>
+<input type="text" id="Notes" placeholder="Notes" class="user" name="" ><br>
+<input type="text" id="Bookmark" placeholder="Bookmark" class="user" name="" ><br>
+<input type="number" id="OwnerID" placeholder="Owner ID*" class="user" name="" pattern="{1,4}" required><br>
+<input type="number" id="CreatorID" placeholder="Creator ID*" class="user" name="" pattern="{1,4}" required><br>
+<input type="number" id="CreatedDate" placeholder="Created Date*" class="pass" name="" onfocus="(this.type='date')" required><br>
+<input type="number" id="ModifiedDate" placeholder="Modified Date*" class="pass" name="" onfocus="(this.type='date')" required ><br>
+<input type="submit" value="Assign Task" class="button" onclick="validation()"><br>
+
+</form>
+</div>
+
+</section>
+</body>
+</html>
